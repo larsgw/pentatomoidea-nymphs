@@ -13,7 +13,7 @@ dist/sdd.xml: dist/data.json
 dist/ssd.lua:
 	curl https://raw.githubusercontent.com/larsgw/pandoc-reader-sdd/v1.0.1/sdd.lua -o dist/sdd.lua
 
-dist/sdd.md: dist/ssd.lua
+dist/sdd.md: dist/ssd.lua dist/sdd.xml
 	cd dist; pandoc -f sdd.lua -t markdown -s sdd.xml > sdd.md
 	node scripts/apply-fixes.js
 
