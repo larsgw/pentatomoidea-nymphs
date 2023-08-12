@@ -18,4 +18,4 @@ dist/sdd.md: dist/ssd.lua
 	node scripts/apply-fixes.js
 
 dist/fauna-ukraine-21-nymphs.pdf: dist/sdd.md dist/figures
-	cd dist; pandoc -t pdf --pdf-engine=xelatex -V mainfont="Noto Serif" sdd.md > fauna-ukraine-21-nymphs.pdf
+	cd dist; pandoc -t pdf --pdf-engine=xelatex -V mainfont="Noto Serif" --dpi 300 sdd.md > fauna-ukraine-21-nymphs.pdf
