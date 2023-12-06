@@ -23,7 +23,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Install pandoc
-        run: sudo apt-get install -y pandoc
+        run: sudo apt-get install -y inkscape pandoc
 
       - name: Checkout
         uses: actions/checkout@v4
