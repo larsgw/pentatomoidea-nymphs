@@ -22,8 +22,11 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Install pandoc
-        run: sudo apt-get install -y inkscape pandoc
+      - name: Install inkscape, pandoc
+        run: |
+          sudo apt-get install -y inkscape
+          curl -L https://github.com/jgm/pandoc/releases/download/3.1.9/pandoc-3.1.9-1-amd64.deb -o /tmp/pandoc-amd64.deb
+          sudo dpkg -i /tmp/pandoc-amd64.deb
 
       - name: Checkout
         uses: actions/checkout@v4
