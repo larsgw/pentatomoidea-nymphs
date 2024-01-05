@@ -46,8 +46,8 @@ jobs:
       - name: Convert to HTML
         run: |
           mkdir -p public
-          pandoc -t html dist/sdd.md > public/index.html
-          cp -a figures/ public/figures/
+          pandoc -s --toc -t html dist/sdd.md > public/index.html
+          cp -a figures/original/ public/figures/
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
