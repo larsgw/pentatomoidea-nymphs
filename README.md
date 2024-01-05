@@ -1,6 +1,6 @@
 To my knowledge, the only keys to the nymphal stages of the European species of Pentatomoidea (shield bugs) appear in _Shchytnyky_ by V. G. Puchkov (1961), volume 21 of _Fauna of Ukraine_. Although the species included were only intended to encompass the fauna of Ukraine, these keys can still be useful for the rest of Europe. With this translation, I hope to make these keys available to a wider European audience.
 
-Lars Willighagen <a href="https://orcid.org/0000-0002-4751-4637"><img src="https://info.orcid.org/wp-content/uploads/2020/12/orcid_16x16.gif" alt="ORCID logo" width="16" height="16"/> 0000-0002-4751-4637</a>
+Lars Willighagen ![ORCID logo](https://info.orcid.org/wp-content/uploads/2020/12/orcid_16x16.gif) [0000-0002-4751-4637](https://orcid.org/0000-0002-4751-4637)
 
 # References
 
