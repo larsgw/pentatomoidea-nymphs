@@ -31,9 +31,9 @@ jobs:
       - name: Install lua dependencies
         run: |
           sudo luarocks install xml2lua
+          sudo mkdir /usr/local/share/lua/5.4
+          sudo cp /usr/local/share/lua/5.1/* /usr/local/share/lua/5.4
           sudo chmod a+r /usr/local/share/lua/*/*
-          ls -al /usr/local/share/lua
-          ls -al /usr/local/share/lua/*
 
       - name: Checkout
         uses: actions/checkout@v4
