@@ -22,13 +22,17 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Install inkscape, pandoc
+      - name: Install inkscape, luarocks, pandoc
         run: |
           sudo apt-get install -y inkscape luarocks
           curl -L https://github.com/jgm/pandoc/releases/download/3.1.9/pandoc-3.1.9-1-amd64.deb -o /tmp/pandoc-amd64.deb
           sudo dpkg -i /tmp/pandoc-amd64.deb
+
+      - name: Install lua dependencies
+        run: |
           sudo luarocks install xml2lua
           sudo chmod a+r /usr/local/share/lua/*/*
+          ls -al /usr/local/share/lua
           ls -al /usr/local/share/lua/*
 
       - name: Checkout
