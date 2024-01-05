@@ -28,6 +28,8 @@ jobs:
           curl -L https://github.com/jgm/pandoc/releases/download/3.1.9/pandoc-3.1.9-1-amd64.deb -o /tmp/pandoc-amd64.deb
           sudo dpkg -i /tmp/pandoc-amd64.deb
           sudo luarocks install xml2lua
+          sudo chmod a+r /usr/local/share/lua/*/*
+          ls -al /usr/local/share/lua/*
 
       - name: Checkout
         uses: actions/checkout@v4
