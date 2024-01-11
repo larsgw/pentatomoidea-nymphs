@@ -47,7 +47,7 @@ jobs:
         run: |
           mkdir -p public
           pandoc -s --toc -t html dist/sdd.md > public/index.html
-          cp -a figures/original/ public/figures/
+          cp -a dist/figures/ public/figures/
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
